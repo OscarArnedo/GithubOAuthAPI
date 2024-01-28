@@ -1,0 +1,9 @@
+oauth2:
+  github:
+    token-uri: https://github.com/login/oauth/access_token
+    authorization-uri: https://github.com/login/oauth/authorize
+    client-id: d19d1cb7eb7cdb665228
+    client-secret: eff53040051dfa1b3964af91ea8748d037f8ba0c
+    scope: gist%20repo
+    authorization-grant-type: authorization_code
+

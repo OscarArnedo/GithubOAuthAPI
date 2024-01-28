@@ -1,0 +1,12 @@
+# Make this call using a browser to be redirected to the authorization page and then to your own application with the code
+# copy the code you get from the github redirection to use it in the second (post) call
+GET https://github.com/login/oauth/authorize?client_id=d19d1cb7eb7cdb665228&scope=repo_gist
+
+#With this call you'll get the acces token. The one that relates user - client - resource server and permissions
+###
+POST https://github.com/login/oauth/access_token?client_id=d19d1cb7eb7cdb665228&client_secret=eff53040051dfa1b3964af91ea8748d037f8ba0c&code=9f7279ebb9f16f290209
+
+# Now with the token you can get your own repositories
+###
+GET https://api.github.com/user/repos
+Authorization: Bearer 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
